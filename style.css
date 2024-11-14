@@ -1,0 +1,180 @@
+/* Corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #f0e4d7, #d3c3b6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+}
+
+/* Conteneur principal */
+#contenu {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px;
+}
+
+/* Titres principaux */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #4a4a4a;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 4px solid #c2a477;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/* Style pour les étiquettes et les champs de saisie */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #dfe3e6;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    font-size: 1.1em;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #c2a477;
+    outline: none;
+}
+
+/* Style des boutons */
+button {
+    background-color: #c2a477;
+    color: #ffffff;
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 25px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #a58861;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour la section des résultats améliorée */
+.result-box {
+    background: #fafafa;
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid #c2a477;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #333;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.result-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #c2a477, #d3b287);
+}
+
+.result-box strong {
+    display: block;
+    font-size: 1.5em;
+    color: #252525;
+    margin-bottom: 20px;
+}
+
+.result-box .result-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0d5c4;
+}
+
+.result-box .result-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.result-box:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mise en page compacte pour les sections d'entrée */
+.input-group {
+    margin-bottom: 25px;
+}
+
+/* Lien vers la page de modification des prix */
+#contenu a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #c2a477;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contenu a:hover {
+    color: #a58861;
+}
+
+/* Style général des formulaires */
+form {
+    margin-bottom: 30px;
+}
+
+/* Alignement des boutons d'ajout */
+button.add-button {
+    background-color: #d1b394;
+    color: #fff;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+button.add-button:hover {
+    background-color: #b59373;
+}
+
+/* Améliorations de l'alignement global */
+#contenu div {
+    margin-bottom: 20px;
+}

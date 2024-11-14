@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats des Calculs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-size: 0.9em; /* Réduction de la taille de la police pour l'ensemble de la page */
+        }
+        #contenu {
+            max-width: 600px; /* Réduction de la largeur maximale du conteneur */
+            margin: 20px auto; /* Centrer le contenu avec un espacement réduit */
+        }
+        h1 {
+            font-size: 1.8em; /* Réduction de la taille du titre */
+        }
+        .result-box {
+            padding: 20px; /* Réduction du padding pour les résultats */
+            font-size: 0.8em; /* Réduction de la taille de la police pour l'encadrement des résultats */
+        }
+        a {
+            font-size: 0.9em; /* Réduction de la taille du lien de retour */
+        }
+    </style>
+</head>
+<body>
+    <div id="contenu">
+        <h1>Résultats des Calculs</h1>
+        <div id="resultats-section" class="result-box">
+            <div id="resultats"></div>
+        </div>
+        <a href="index.html">Retour au Calculateur</a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Récupérer les résultats stockés dans le localStorage
+            const resultats = localStorage.getItem("resultats");
+            if (resultats) {
+                document.getElementById("resultats").innerHTML = resultats;
+            } else {
+                document.getElementById("resultats").innerHTML = "Aucun résultat disponible.";
+            }
+        });
+    </script>
+</body>
+</html>
